@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - 5.3
+
+install:
+  ## install the Cypress CLI Tools
+  ## which gives us access to the
+  ## `cypress` command used below
+  - npm install -g cypress-cli
+
+script:
+  ## run cypress in CI mode
+  ## which runs all of the tests
+  ## and uses the CYPRESS_CI_KEY
+  ## environment var by default
+  ## which you need to configure
+  ## on Travis CI behind the scenes
+  #- cypress ci
+
+  ## alternatively we could specify
+  ## a specific secret key to use
+  ## like this without having to
+  ## configure anything in Travis CI:
+  - cypress ci bf441029-a1d3-47d5-b1a5-f666af343a01
