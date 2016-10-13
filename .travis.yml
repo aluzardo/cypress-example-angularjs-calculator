@@ -22,4 +22,4 @@ script:
   ## a specific secret key to use
   ## like this without having to
   ## configure anything in Travis CI:
-  - cypress ci bf441029-a1d3-47d5-b1a5-f666af343a01
+  - cypress ci 158bc198-b7b1-4940-8c91-c3cd7058c1f4
